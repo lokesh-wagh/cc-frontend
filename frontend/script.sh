@@ -4,7 +4,7 @@
 set -e
 
 # Define the frontend directory
-FRONTEND_DIR="frontend"
+FRONTEND_DIR="/home/lok*/lok*/cc-frontend/frontend"
 
 echo "Pulling changes from the frontend repository..."
 git pull origin main # Replace 'main' with your branch name if different
