@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-const backendURL = 'https://chaiboi.me/api'
+const backendURL = 'http://chaiboi.me/api'
 function Members() {
     const [members, setMembers] = useState([]);
     const [newMember, setNewMember] = useState('');
