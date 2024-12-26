@@ -22,7 +22,8 @@ echo "Installing dependencies..."
 npm install
 
 echo "Building the project..."
-#BUILD_DIR=./mywebsite
-npm run build
+#BUILD_DIR=./mywebsit
+nohup npm run dev &> /home/lokeshwagh200404/lokesh/react-dev.log &
+
 
 echo "Frontend updated and built successfully!"
