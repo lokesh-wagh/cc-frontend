@@ -22,7 +22,7 @@ echo "Installing dependencies..."
 npm install
 
 echo "Building the project..."
-BUILD_DIR=./mywebsite
+#BUILD_DIR=./mywebsite
 npm run build
 
 echo "Frontend updated and built successfully!"
