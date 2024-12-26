@@ -36,6 +36,7 @@ else
 fi
 
 #BUILD_DIR=./mywebsit
+cd frontend
 nohup npm run dev &> /home/lokeshwagh200404/lokesh/react-dev.log &
 
 
