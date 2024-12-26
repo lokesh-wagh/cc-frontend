@@ -102,12 +102,19 @@ function Members2() {
     );
 }
 
-
+const Home = () => {
+    return (
+        <div>
+            THIS IS HOME PAGE
+        </div>
+    )
+}
 const App = () => {
   return (
     <Router>
       
         <Routes>
+           <Route path="/" element={<Home />} />
           <Route path="/endpoint1" element={<Members1 />} />
           <Route path="/endpoint2" element={<Members2 />} />
         </Routes>
