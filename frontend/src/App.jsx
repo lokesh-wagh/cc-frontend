@@ -108,8 +108,8 @@ const App = () => {
     <Router>
       
         <Routes>
-          <Route path="/endpoint1" element={<Endpoint1 />} />
-          <Route path="/endpoint2" element={<Endpoint2 />} />
+          <Route path="/endpoint1" element={<Members1 />} />
+          <Route path="/endpoint2" element={<Members2 />} />
         </Routes>
      
     </Router>
