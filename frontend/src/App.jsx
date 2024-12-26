@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import axios from 'axios';
-const backendURL = 'https://chaiboi.me/api'
+const backendURL = 'https://chaiboi.me/mywebsite/api'
 function Members1() {
     const [members, setMembers] = useState([]);
     const [newMember, setNewMember] = useState('');
