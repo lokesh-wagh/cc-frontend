@@ -23,20 +23,8 @@ npm install
 
 echo "Building the project..."
 
+npm run build
 
-PID=$(sudo lsof -t -i :3000)
-
-# Check if the PID is found
-if [ -z "$PID" ]; then
-  echo "No process is running on port 3000."
-else
-  # Kill the process using the found PID
-  sudo kill -9 $PID
-  echo "Process running on port 3000 (PID: $PID) has been stopped."
-fi
-
-#BUILD_DIR=./mywebsit
-nohup npm run dev &> /home/lokeshwagh200404/lokesh/react-dev.log &
 
 
 echo "Frontend updated and built successfully!"
