@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import axios from 'axios';
-const backendURL = 'https://chaiboi.me/api'
+const backendURL = 'https://chaiboi.me/mywebsite/api'
 function Members1() {
     const [members, setMembers] = useState([]);
     const [newMember, setNewMember] = useState('');
@@ -111,13 +111,13 @@ const Home = () => {
 }
 const App = () => {
   return (
-    <Router>
+    <Router basename="/mywebsite">
       
         <Routes>
            
-          <Route path="/endpoint1" element={<Members1 />} />
-          <Route path="/endpoint2" element={<Members2 />} />
-            <Route path="*" element={<Home />} />
+          <Route path="/mem1" element={<Members1 />} />
+          <Route path="/mem2" element={<Members2 />} />
+            <Route path="/" element={<Home />} />
         </Routes>
      
     </Router>

@@ -4,5 +4,10 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  build: {
+    outDir: 'dist/mywebsite', // Output directory for build files
+  },
+	base : "/mywebsite"
+	
 
 })
